@@ -1,1 +1,254 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  width: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+p {
+  font-family: 'Lato', sans-serif;
+}
+a {
+  font-family: 'Lato', sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+nav {
+  display: flex;
+  width: 98%;
+  justify-content: flex-end;
+}
+nav div {
+  text-align: end;
+  margin: 2% 2% 0 0;
+}
+.topSection {
+  display: flex;
+  width: 95%;
+  margin: 2%;
+  justify-content: center;
+  background: deepskyblue;
+  color: white;
+}
+.topSection div {
+  width: 98%;
+  margin: 2%;
+}
+.topSection img {
+  width: 25%;
+}
+.topSection h1 {
+  font-size: 2.5rem;
+}
+.topSection .button {
+  border: 1.5px solid black;
+  background: white;
+  width: 15%;
+}
+.topSection .button p {
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+.middleSection {
+  display: flex;
+  width: 95%;
+  margin: 2%;
+}
+.middleSection .aboutDiv {
+  width: 50%;
+}
+.middleSection .aboutDiv h2 {
+  font-size: 1.5rem;
+}
+.middleSection .skillsDiv {
+  width: 50%;
+  margin: 0 0 0 10%;
+}
+.middleSection .skillsDiv h3 {
+  font-size: 1.2rem;
+}
+.bottomSection {
+  display: flex;
+  width: 100%;
+  margin: 5% 2%;
+  flex-direction: column;
+}
+.bottomSection h3 {
+  font-size: 1.5rem;
+}
+footer {
+  width: 95%;
+  text-align: center;
+  background: deepskyblue;
+  margin: 2%;
+}
+footer p {
+  padding: 1% 0 1% 0;
+  color: white;
+}
+th {
+  text-align: left;
+}
+th,
+td {
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+}
+.tr1,
+.tr3 {
+  background: lightgrey;
+}
+@media (max-width: 500px) {
+  .topSection .button {
+    width: 100px;
+  }
+  .middleSection {
+    flex-direction: column;
+  }
+  .middleSection .aboutDiv {
+    width: 95%;
+  }
+  .middleSection .skillsDiv {
+    width: 95%;
+    margin: 4% 0 0 0;
+  }
+}

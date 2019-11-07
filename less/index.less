@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	width:100%;
 }
 ol, ul {
 	list-style: none;
@@ -49,11 +50,175 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+@maincolor: deepskyblue;
+@mainfont: white;
+.sectionSpacing() {
+	display: flex;
+	width: 95%;
+	margin: 2%;
+}
+.skills() {
+	width: 50%;
+	margin: 0 0 0 10%;
+}
+
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	font-family: 'Lato', sans-serif;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
 }
+
+nav {
+	display: flex;
+	width: 98%;
+	justify-content: flex-end;
+		
+	div {
+		text-align: end;
+		margin: 2% 2% 0 0;
+
+	} //this closes div//
+
+} //this closes nav//
+
+.topSection {
+	
+	.sectionSpacing();
+	justify-content: center;
+	background: @maincolor;
+	color: @mainfont;
+	
+	div {
+		width: 98%;
+		margin: 2%
+	}
+
+	img {
+		width: 25%
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	.button {
+		border: 1.5px solid black;
+		background: white;
+		width: 15%
+
+		}
+	
+		.button p {
+			padding: 10px;
+			text-align: center;
+			color: black;
+			
+		}
+
+} // this closes top section //
+
+.middleSection {
+
+	.sectionSpacing();
+
+	.aboutDiv {
+
+		width: 50%;
+	
+		h2 {
+		font-size: 1.5rem;
+		}
+	}// this closes aboutDiv
+
+	.skillsDiv {
+		.skills();
+
+		h3 {
+			font-size: 1.2rem;
+		}		
+
+	} // this closes skillsDiv
+} // this closes middle section //
+
+.bottomSection {
+
+	display: flex;
+	width: 100%;
+	margin: 5% 2%;
+	flex-direction: column;
+
+	h3 {
+		font-size: 1.5rem;
+	}
+	
+} // this closes the bottom section //
+
+footer {
+	width: 95%;
+	text-align: center;
+	background: @maincolor;
+	margin: 2%;
+
+	p {
+		padding: 1% 0 1% 0;
+		color: @mainfont;
+	}
+
+
+} // closes the footer //
+
+
+
+th {
+	text-align: left;
+	
+		
+}
+
+th, td {
+	padding: 10px;
+	font-family: 'Lato', sans-serif;
+}
+
+.tr1, .tr3 {
+	background: lightgrey;
+}
+
+@media(max-width: 500px) {
+	.topSection .button {
+		width: 100px;
+	}
+
+	.middleSection {
+		flex-direction: column;
+	}
+	.middleSection .aboutDiv {
+		width: 95%;
+	}
+
+	.middleSection .skillsDiv {
+		width: 95%;
+		margin: 4% 0 0 0;
+	}
+}
+
 
